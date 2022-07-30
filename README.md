@@ -19,3 +19,9 @@ curl -sv -X PUT  http://localhost:8080/health/liveness\?status\=false
 or
 curl -sv -X PUT  http://localhost:8080/health/liveness\?status\=true
 ```
+
+# build
+```
+./gradlew clean build
+docker built -t memory-hole .
+```
